@@ -1,0 +1,104 @@
+*{
+    margin: 10px;
+    font-family: sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 50px;
+}
+
+.searchbutton{
+    background-color:rgb(208, 206, 206);
+    color:rgb(0, 0, 0);
+    padding: 6px 20px;
+    font-size: 16px;
+    border:4px;
+    border-radius: 50px;
+    
+}
+
+.Loginbutton{
+    font-style: bold;
+    background-color:rgb(254, 254, 254);
+    color:rgb(0, 0, 0);
+    padding: 6px 20px;
+    font-size: 16px;
+    border:4px;
+    border-radius: 50px;
+}
+
+.Signbutton{
+    font-style: bold;
+    background-color:#1670e8;
+    color:white;
+    padding: 6px 20px;
+    font-size: 16px;
+    border:4px;
+    border-radius: 50px;
+
+}
+
+.menu{
+    background-color:rgb(254, 254, 254);
+    color:rgb(0, 0, 0);
+    font-size: 25px;
+    border:4px;
+    border-radius: 50px;
+
+}
+
+.bgimage{
+    width: 1495px;
+    height: 700px; 
+    line-height: 50px;
+    font-family: sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-image:linear-gradient(to right, rgba(0, 0, 0, 0),#16dae8),url("WhatsApp Image 2026-10-14 at 12.39.10 AM.jpeg")
+}
+
+.bgimage h1{
+    color: white;
+    display: flex;
+    justify-content: end;
+    padding-top: 100px;
+    font-size: 50px;
+    padding-right: 120px;
+    
+}
+
+.bgimage h2{
+    color: white;
+    display: flex;
+    justify-content: end;
+    line-height: 30px;
+    font-size: larger;
+    padding-right: 88px;
+  
+}
+
+
+
+.card-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  
+}
+
+
+.card{
+  text-align: center;
+  height: 200px;
+  background: linear-gradient(to bottom, #fff,#16dae894);
+  border: 2px solid #fff;
+  border-radius: 25px;
+ 
+}
+
+
