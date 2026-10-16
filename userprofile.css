@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navigator{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background: white;
+    color: #1670E8;
+}
+.address{
+      display: block;
+      margin-bottom: 6px;
+      font-size: 14px;
+      color: #526783;
+      line-height: 1.5;
+}
+.search input{
+    flex: 1;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 8px;
+    border: 1px solid ;
+    margin-top: 50px;
+}
+.search button{
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    cursor: pointer;
+    color: #1670E8;
+}
+.profile h1{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.profile p{
+    margin: 8px 0;
+    color: #526783;
+}
+.logo{
+      font-size: 25px;
+      font-weight: bold;
+      color: #1670E8;
+    }
+.button{
+    background: white;
+    color: #1670E8;
+    border: 1px solid #1670E8;
+    border-radius: 7px;
+    padding: 10px 15px;
+    }
