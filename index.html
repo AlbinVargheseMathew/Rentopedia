@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental App - Password Reset</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="brand">
+            <div class="brand-icon">⌂</div>
+            <h2>Rentopedia<span></span></h2>
+            <p>Anything you need.Rent it here.</p>
+        </div>
+
+        <!-- Step 1: Forgot Password -->
+        <section id="forgotPage" class="page active">
+            <div class="icon-circle">✉</div>
+            <h1>Forgot Password?</h1>
+            <p class="description">
+                Enter your registered email address.
+                We will help you reset your password.
+            </p>
+
+            <form id="forgotForm">
+                <label for="email">Email Address</label>
+                <input type="email" id="email"
+                    placeholder="you@example.com" required>
+
+                <button type="submit">Send OTP</button>
+            </form>
+
+            <p class="message" id="forgotMessage"></p>
+
+            <p class="back-text">
+                Remember your password?
+                <a href="#" id="backToLogin">Back to login</a>
+            </p>
+        </section>
+
+        <!-- Step 2: OTP Verification -->
+        <section id="otpPage" class="page">
+            <div class="icon-circle">✓</div>
+            <h1>Verify OTP</h1>
+            <p class="description">
+                Enter the 6-digit OTP generated for
+                <strong id="emailDisplay"></strong>.
+            </p>
+
+            <form id="otpForm">
+                <label for="otp">One-Time Password</label>
+                <input type="text" id="otp"
+                    placeholder="Enter 6-digit OTP"
+                    inputmode="numeric"
+                    maxlength="6"
+                    pattern="[0-9]{6}" required>
+
+                <button type="submit">Verify OTP</button>
+            </form>
+
+            <p class="message" id="otpMessage"></p>
+            <p class="demo-otp" id="demoOtp"></p>
+
+            <p class="back-text">
+                Didn't receive it?
+                <a href="#" id="resendOtp">Resend OTP</a>
+            </p>
+
+            <p class="back-text">
+                <a href="#" id="editEmail">Change email address</a>
+            </p>
+        </section>
+
+        <!-- Step 3: Reset Password -->
+        <section id="resetPage" class="page">
+            <div class="icon-circle">🔒</div>
+            <h1>Reset Password</h1>
+            <p class="description">
+                Create a strong new password for your rental account.
+            </p>
+
+            <form id="resetForm">
+                <label for="newPassword">New Password</label>
+                <div class="password-box">
+                    <input type="password" id="newPassword"
+                        placeholder="Minimum 8 characters"
+                        minlength="8" required>
+                    <button type="button" class="toggle"
+                        data-target="newPassword">Show</button>
+                </div>
+
+                <label for="confirmPassword">Confirm Password</label>
+                <div class="password-box">
+                    <input type="password" id="confirmPassword"
+                        placeholder="Enter password again" required>
+                    <button type="button" class="toggle"
+                        data-target="confirmPassword">Show</button>
+                </div>
+
+                <p class="hint">
+                    Use at least 8 characters.
+                </p>
+
+                <button type="submit">Reset Password</button>
+            </form>
+
+            <p class="message" id="resetMessage"></p>
+        </section>
+
+        <!-- Step 4: Success -->
+        <section id="successPage" class="page">
+            <div class="icon-circle success-icon">✓</div>
+            <h1>Password Reset!</h1>
+            <p class="description">
+                Your demo password has been reset successfully.
+                You can now return to the login page.
+            </p>
+            <button id="finishButton">Back to Login</button>
+        </section>
+
+        <footer>© 2026 Rentopedia.</footer>
+
+    </div>
+
+    <script src="forget.js"></script>
+</body>
+</html>
